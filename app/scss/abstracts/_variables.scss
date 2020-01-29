@@ -1,0 +1,40 @@
+// Font Awesome
+// --------------------
+$fa-font-path: '~font-awesome/fonts';
+
+// Fonts
+// --------------------
+$default-font-size: 16px;
+$medium-font-size: 18px;
+$large-font-size: 20px;
+
+$font-family-content: 'Source Sans pro', sans-serif;
+$font-family-title: 'Bitter', serif;
+$font-family-fallback: 'Helvetica', Arial, sans-serif;
+
+// Colors
+// --------------------
+$white: #FFF;
+$black: #000;
+$lightblue: #6FB2FD;
+$lightpurple: #888AFC;
+$darkblue: #242943;
+
+$color-text: $white;
+$color-text-alt: $black;
+$color-brand: $lightblue;
+$color-brand-alt: $lightpurple;
+$color-bg: $white;
+$color-bg-alt: $black;
+$color-bg-footer: $darkblue;
+
+// Animations
+// --------------------
+$duration-slow: 1s;
+$duration-medium: 0.5s;
+$duration-fast: 0.3s;
+
+// Breakpoints
+// --------------------
+$breakpoint-medium: 600px;
+$breakpoint-large: 800px;

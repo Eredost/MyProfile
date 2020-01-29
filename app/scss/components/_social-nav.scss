@@ -1,0 +1,7 @@
+.social-nav {
+  text-align: center;
+
+  &__link + &__link {
+    margin-left: 5%;
+  }
+}

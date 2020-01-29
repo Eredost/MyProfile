@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Source+Sans+Pro:400,600,900&display=swap');
+
+html,
+body {
+  font-size: $default-font-size;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: $medium-font-size;
+  }
+  @media (min-width: $breakpoint-large) {
+    font-size: $large-font-size;
+  }
+}
+
+body,
+a {
+  font-family: $font-family-content, $font-family-fallback;
+  color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+}
