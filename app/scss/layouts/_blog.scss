@@ -1,4 +1,12 @@
 .blog {
-  min-height: 3000px;
-  background-color: darkcyan;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $breakpoint-large) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $breakpoint-extralarge) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

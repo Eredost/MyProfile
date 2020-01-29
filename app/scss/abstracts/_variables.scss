@@ -28,6 +28,15 @@ $color-bg: $white;
 $color-bg-alt: $black;
 $color-bg-footer: $darkblue;
 
+$posts-bg-colors: (
+  1: #74C3DE,
+  2: #8B86C1,
+  3: #DE908B,
+  4: #E5BD96,
+  5: #0A446F,
+  6: #87C4AF,
+);
+
 // Animations
 // --------------------
 $duration-slow: 1s;
@@ -38,3 +47,4 @@ $duration-fast: 0.3s;
 // --------------------
 $breakpoint-medium: 600px;
 $breakpoint-large: 800px;
+$breakpoint-extralarge: 1200px;
