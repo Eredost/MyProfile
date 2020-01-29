@@ -1,0 +1,13 @@
+.navbar {
+
+  &__item {
+    padding: 1em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    & + & {
+      border-top: 2px solid lighten($darkblue, 20%);
+    }
+  }
+}

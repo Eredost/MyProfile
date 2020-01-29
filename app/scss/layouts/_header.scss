@@ -1,11 +1,18 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 0.9em;
   display: flex;
   align-items: center;
+  background: transparent;
+
+  &.detached {
+    position: fixed;
+    background: rgb(111,178,253);
+    background: linear-gradient(90deg, rgba(111,178,253,1) 0%, rgba(136,138,252,1) 100%);
+  }
 
   & * {
     flex: 1;

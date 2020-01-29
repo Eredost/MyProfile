@@ -1,0 +1,32 @@
+.menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 90;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &__navbar,
+  &__social {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  &__social {
+    margin-top: 1em;
+    font-size: 1.3em;
+  }
+
+  &__closing {
+    position: absolute;
+    right: 0.9em;
+    top: 0.9em;
+    cursor: pointer;
+  }
+}

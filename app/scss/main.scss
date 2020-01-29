@@ -12,12 +12,15 @@
   'base/typo';
 
 @import
-  'layouts/header';
+  'layouts/header',
+  'layouts/menu',
+  'layouts/home';
 
 @import
   'components/logo',
   'components/social-nav',
-  'components/main-nav';
+  'components/main-nav',
+  'components/navbar';
 
 @import
   'shame';
