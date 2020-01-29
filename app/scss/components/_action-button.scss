@@ -1,0 +1,26 @@
+.action-button {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: $color-brand;
+  border: 3px solid $color-brand;
+  border-radius: 3px;
+  font-size: 0.95em;
+  font-weight: bold;
+  padding: 0.5em 2.4em 0.5em 0.7em;
+  transition: $duration-fast padding-right, color, border-color;
+
+  &::after {
+    content: '➞';
+    position: absolute;
+    font-size: 1.8em;
+    top: 0;
+    right: 0.3em
+  }
+
+  &:hover {
+    padding-right: 3em;
+    color: $lightpurple;
+    border-color: $lightpurple;
+  }
+}

@@ -14,13 +14,16 @@
 @import
   'layouts/header',
   'layouts/menu',
-  'layouts/home';
+  'layouts/home',
+  'layouts/blog';
 
 @import
   'components/logo',
   'components/social-nav',
   'components/main-nav',
-  'components/navbar';
+  'components/navbar',
+  'components/intro',
+  'components/action-button';
 
 @import
   'shame';
