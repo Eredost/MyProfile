@@ -15,7 +15,8 @@
   'layouts/header',
   'layouts/menu',
   'layouts/home',
-  'layouts/blog';
+  'layouts/blog',
+  'layouts/grid';
 
 @import
   'components/logo',
@@ -24,7 +25,8 @@
   'components/navbar',
   'components/intro',
   'components/action-button',
-  'components/post';
+  'components/post',
+  'components/project';
 
 @import
   'shame';
