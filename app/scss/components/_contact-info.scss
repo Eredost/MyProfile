@@ -1,0 +1,39 @@
+.contact-info {
+  margin: 1em 0;
+
+  &__icon {
+    color: lighten($color-bg-footer, 40%);
+    font-size: 1.2em;
+  }
+
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__value {
+    color: lighten($color-bg-footer, 40%);
+    margin-bottom: 0.2em;
+
+    &--link {
+      font-weight: 600;
+    }
+  }
+
+  &__section {
+    display: flex;
+    padding: 1em;
+
+    & + & {
+      border-top: 2px solid lighten($color-bg-footer, 10%);
+    }
+
+    &__wrapper:first-child {
+      margin-right: 1em;
+    }
+  }
+
+  @media (min-width: $breakpoint-extralarge) {
+    display: inline-block;
+    flex: 1;
+  }
+}

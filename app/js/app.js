@@ -10,6 +10,11 @@ var app = {
 
     // Handle header menu position when leaving introduction section
     app.handleNavPosition();
+
+    // Handle navigation menu links
+    $('.navbar__item__link').each(function () {
+      $(this).on('click', app.handleNavClicks);
+    });
   },
 
   handleNavOpening: function () {
@@ -29,6 +34,14 @@ var app = {
         $('.header').addClass('detached');
       }
     });
+  },
+
+  handleNavClicks: function (event) {
+    var $href = $(event.target).attr('href');
+    $('html, body').animate({
+      scrollTop: $($href).offset().top
+    }, 800);
+    app.handleNavClosing();
   }
 };
 

@@ -1,0 +1,9 @@
+.footer {
+  background-color: $color-bg-footer;
+  padding: 1em;
+
+  @media (min-width: $breakpoint-extralarge) {
+    display: flex;
+    padding: 2.5em;
+  }
+}
