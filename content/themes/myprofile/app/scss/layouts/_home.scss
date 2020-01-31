@@ -1,10 +1,27 @@
 .home {
+  position: relative;
   min-height: 600px;
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: right;
   padding: 0 1em;
+  z-index: 10;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to right,
+      transparentize($color-bg-alt, 0),
+      transparentize($color-bg-alt, 1)
+    );
+    z-index: 5;
+  }
 
   @media (min-width: $breakpoint-large) {
     padding: 0 3em;

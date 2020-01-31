@@ -1,4 +1,6 @@
 .intro {
+  position: relative;
+  z-index: 10;
 
   &__title {
     text-align: center;
