@@ -1,4 +1,11 @@
-notes/
-.DS_Store
-/public
-/node_modules
+# Wordpress config file
+wp-config.php
+
+# Wordpress folders
+/wp
+/vendor
+/content/*
+!/content/themes
+!/content/uploads
+/content/themes/*
+!/content/themes/myprofile
