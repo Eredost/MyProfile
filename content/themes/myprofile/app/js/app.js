@@ -37,11 +37,14 @@ var app = {
   },
 
   handleNavClicks: function (event) {
-    var $href = $(event.target).attr('href');
-    $('html, body').animate({
-      scrollTop: $($href).offset().top
-    }, 800);
-    app.handleNavClosing();
+
+    var $href = event.target.hash;
+    if ($($href).length) {
+      $('html, body').animate({
+        scrollTop: $($href).offset().top
+      }, 800);
+      app.handleNavClosing();
+    }
   }
 };
 
