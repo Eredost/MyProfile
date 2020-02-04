@@ -18,7 +18,8 @@
         "johnpbloch/wordpress": "*",
         "wpackagist-theme/twentytwenty": "*",
         "wpackagist-plugin/what-the-file": "^1.5",
-        "wpackagist-plugin/simply-show-hooks": "^1.2"
+        "wpackagist-plugin/simply-show-hooks": "^1.2",
+        "wpackagist-plugin/contact-form-7":"5.1.6"
     },
     "extra": {
         "wordpress-install-dir": "wp",

@@ -1,24 +1,7 @@
 <footer class="footer" id="contact">
-    <form action="" method="post" class="contact-form">
 
-        <div class="contact-form__section">
-            <label for="name" class="contact-form__section__label">Nom</label>
-            <input class="contact-form__section__input" type="text" id="name" name="name" required>
-        </div>
+    <?php get_template_part('template-parts/footer/contact-form') ?>
 
-        <div class="contact-form__section">
-            <label for="email" class="contact-form__section__label">Email</label>
-            <input class="contact-form__section__input" type="email" id="email" name="email" required>
-        </div>
-
-        <div class="contact-form__section">
-            <label for="message" class="contact-form__section__label">Message</label>
-            <textarea class="contact-form__section__input" name="message" id="message" rows="10" required></textarea>
-        </div>
-
-        <input type="submit" value="Envoyer" class="contact-form__submit">
-
-    </form>
     <div class="contact-info">
 
         <div class="contact-info__section">
