@@ -1,6 +1,8 @@
 <div class="project">
     <div class="project__head">
-        <i class="fa <?= get_post_meta(get_the_ID(), 'fa-icon', true) ?> project__head__icon" aria-hidden="true"></i>
+        <?php if (get_field('font_awesome_icon')): ?>
+            <i class="fa <?php the_field('font_awesome_icon') ?> project__head__icon" aria-hidden="true"></i>
+        <?php endif; ?>
     </div>
     <div class="project__content">
         <h3 class="project__content__title">

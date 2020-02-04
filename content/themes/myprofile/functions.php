@@ -4,6 +4,10 @@ require 'inc/enqueue.php';
 
 require 'inc/theme-setup.php';
 
+require 'inc/shortcodes.php';
+
+require 'inc/customizer.php';
+
 function remove_img_attr ($html)
 {
     return preg_replace('/(width|height)="\d+"\s/', "", $html);
