@@ -16,10 +16,10 @@ endif;
 
     <?php
     $args = [
-        'posts_per_page'  => 6,
+        'posts_per_page'  => get_theme_mod('myprofile_homepage_posts_per_page'),
         'order'           => 'ASC',
         'orderby'         => 'rand',
-        'category__not_in' => array(2),
+        'category_name' => get_theme_mod('myprofile_homepage_post_category'),
     ];
 
     $wpQueryArticles = new WP_Query($args);

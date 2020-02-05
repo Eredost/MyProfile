@@ -18,6 +18,8 @@ class Customizer_Section_Homepage
 
         $this->create_section();
 
+        $this->create_setting_select_category();
+        $this->create_setting_posts_per_page();
         $this->create_setting_page_insert();
     }
 
@@ -45,6 +47,46 @@ class Customizer_Section_Homepage
                 'type'    => 'dropdown-pages',
                 'label'   => 'Page à insérer',
                 'section' => self::SECTION_ID,
+            ]
+        );
+    }
+
+    private function create_setting_posts_per_page()
+    {
+        $this->wp_customize->add_setting(
+            'myprofile_homepage_posts_per_page'
+        );
+
+        $this->wp_customize->add_control(
+            'myprofile_homepage_posts_per_page',
+            [
+                'type'    => 'number',
+                'label'   => 'Nombre d\'articles affichés',
+                'section' => self::SECTION_ID,
+            ]
+        );
+    }
+
+    private function create_setting_select_category()
+    {
+        $categories = get_categories();
+        $choices = [];
+
+        foreach ($categories as $category) {
+            $choices[$category->slug] = $category->name;
+        }
+
+        $this->wp_customize->add_setting(
+            'myprofile_homepage_post_category'
+        );
+
+        $this->wp_customize->add_control(
+            'myprofile_homepage_post_category',
+            [
+                'type'    => 'select',
+                'label'   => 'Catégorie des articles',
+                'section' => self::SECTION_ID,
+                'choices' => $choices,
             ]
         );
     }
