@@ -37,6 +37,16 @@ endif;
 
 </section>
 
+<?php
+$page_insert_id = get_theme_mod('myprofile_homepage_insert');
+$page_insert_post = get_post($page_insert_id);
+?>
+
+<section class="page" style="background: #2d3136">
+    <h3><?= $page_insert_post->post_title ?></h3>
+    <p><?= $page_insert_post->post_content ?></p>
+</section>
+
 <section class="grid" id="projects">
     <div class="grid__wrapper">
 

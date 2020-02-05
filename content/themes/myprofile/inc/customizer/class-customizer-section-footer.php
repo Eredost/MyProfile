@@ -1,7 +1,7 @@
 <?php
 
-class Customizer_Section_Footer {
-
+class Customizer_Section_Footer
+{
     /** @var WP_Customize_Manager $wp_customize */
     private $wp_customize;
 
@@ -22,6 +22,7 @@ class Customizer_Section_Footer {
         $this->create_setting_email();
         $this->create_setting_telephone();
         $this->create_setting_address();
+        $this->create_setting_bgcolor();
     }
 
     private function create_section()
@@ -109,6 +110,27 @@ class Customizer_Section_Footer {
                 'label'       => 'Adresse',
                 'description' => "Adresse affiché dans le pied de page",
             ]
+        );
+    }
+
+    private function create_setting_bgcolor()
+    {
+        $this->wp_customize->add_setting(
+            'myprofile_footer_bgcolor',
+            [
+                'default' => '#242943',
+            ]
+        );
+
+        $this->wp_customize->add_control(
+            new WP_Customize_Color_Control(
+                $this->wp_customize,
+                'myprofile_footer_bgcolor',
+                [
+                    'label'   => 'Couleur de fond',
+                    'section' => self::SECTION_ID,
+                ]
+            )
         );
     }
 }
