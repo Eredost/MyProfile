@@ -47,6 +47,24 @@ $page_insert_post = get_post($page_insert_id);
     <p><?= $page_insert_post->post_content ?></p>
 </section>
 
+<section class="projects" style="background-color: #1e8cbe">
+    <?php
+    $projects_query = new WP_Query([
+            'post_type' => Myprofile_Settings::CPT_PROJECT_ID,
+    ]);
+
+    if ($projects_query->have_posts()):
+        while ($projects_query->have_posts()):
+            $projects_query->the_post();
+    ?>
+            <h2><?php the_title(); ?></h2>
+    <?php
+        endwhile;
+        wp_reset_postdata();
+    endif;
+    ?>
+</section>
+
 <section class="grid" id="projects">
     <div class="grid__wrapper">
 
