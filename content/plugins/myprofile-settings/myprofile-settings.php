@@ -2,6 +2,9 @@
 
 /*
  * Plugin Name: Myprofile-settings
+ * Description: Configuration nécessaire pour le thème MyProfile
+ * Author: Michaël Coutin
+ * Author URI: https://github.com/Eredost
  * Version: 1.0
  */
 
