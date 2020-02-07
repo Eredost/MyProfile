@@ -20,7 +20,6 @@ class Customizer_Section_Homepage
 
         $this->create_setting_select_category();
         $this->create_setting_posts_per_page();
-        $this->create_setting_page_insert();
     }
 
     private function create_section()
@@ -31,22 +30,6 @@ class Customizer_Section_Homepage
                 'title'       => 'Page d\'accueil',
                 'description' => 'MyProfile - Gestion de la page d\'accueil',
                 'panel'       => $this->panel_id,
-            ]
-        );
-    }
-
-    private function create_setting_page_insert()
-    {
-        $this->wp_customize->add_setting(
-            'myprofile_homepage_insert'
-        );
-
-        $this->wp_customize->add_control(
-            'myprofile_homepage_insert',
-            [
-                'type'    => 'dropdown-pages',
-                'label'   => 'Page à insérer',
-                'section' => self::SECTION_ID,
             ]
         );
     }

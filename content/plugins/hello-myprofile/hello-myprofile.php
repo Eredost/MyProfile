@@ -1,9 +1,16 @@
 <?php
 /*
  * Plugin Name: hello-myprofile
+ * Description: Mon tout premier plugin WordPress, il permet l'affichage de la date et de l'heure dans le pied de page du menu admin
+ * Author: Michaël Coutin
+ * Author URI: https://github.com/Eredost
+ * Version: 1.0
  */
 
-defined('ABSPATH') || die();
+if (!defined('ABSPATH')) {
+    http_response_code(404);
+    exit();
+}
 
 function hello_myprofile()
 {

@@ -36,19 +36,17 @@
 
   @media (min-width: $breakpoint-extralarge) {
     display: inline-block;
-    width: 60%;
     padding: 1.8em;
     border-right: 2px solid lighten($color-bg-footer, 10%);
 
-    &__section:nth-child(1),
-    &__section:nth-child(2) {
+    &__section:nth-of-type(2),
+    &__section:nth-of-type(3) {
       display: inline-block;
       width: 45%;
     }
 
-    &__section:nth-child(2) {
+    &__section:nth-of-type(3) {
       float: right;
     }
-
   }
 }

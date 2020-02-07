@@ -10,5 +10,7 @@ wp-config.php
 !/content/plugins
 /content/plugins/*
 !/content/plugins/hello-myprofile
+!/content/plugins/redirect-to
+!/content/plugins/myprofile-settings
 /content/themes/*
 !/content/themes/myprofile

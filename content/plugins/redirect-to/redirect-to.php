@@ -1,7 +1,9 @@
 <?php
 /*
  * Plugin Name: Redirect-to
- * Description: Permet la redirection de certains posts
+ * Description: Permet la redirection des pages et des articles vers des URL spécifié à travers un Custom Field
+ * Author: Michaël Coutin
+ * Author URI: https://github.com/Eredost
  * Version: 1.0
  */
 
