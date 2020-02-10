@@ -40,7 +40,10 @@ class Customizer_Section_Footer
     private function create_setting_active()
     {
         $this->wp_customize->add_setting(
-            'myprofile_footer_display'
+            'myprofile_footer_display',
+            [
+                'default' => 1,
+            ]
         );
 
         $this->wp_customize->add_control(

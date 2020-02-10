@@ -1,10 +1,17 @@
 <?php get_header(); ?>
 
 <?php
-if (have_posts()):
-    while (have_posts()):
 
-        the_post();
+$args = [
+    'pagename' => 'hello-je-suis-miss-kaplan',
+];
+
+$wpBannerQuery = new WP_Query($args);
+
+if ($wpBannerQuery->have_posts()):
+    while ($wpBannerQuery->have_posts()):
+
+        $wpBannerQuery->the_post();
         get_template_part('template-parts/content/banner');
 
     endwhile;
