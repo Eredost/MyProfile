@@ -3,11 +3,11 @@
 function example_func($attributs)
 {
     $atts = shortcode_atts([
-        'activite' => 'aime l\'argent',
+        'activite' => 'running',
         'color'    => 'red'
     ], $attributs);
     return <<< HTML
-        <p style="color:{$atts['color']}">Madame Michu {$atts['activite']}</p>
+        <p style="color:{$atts['color']}">John Doe aime pratiquer le {$atts['activite']}</p>
 HTML;
 }
 
@@ -20,4 +20,4 @@ function caption_shortcode($attributs, $content = null)
 HTML;
 }
 
-add_shortcode('michuvaleur', 'caption_shortcode');
+add_shortcode('example_with_closing_tags', 'caption_shortcode');
