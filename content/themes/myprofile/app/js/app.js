@@ -4,6 +4,9 @@ var app = {
   init: function() {
     console.log('init');
 
+    // Handle newsletter form submit
+    $('#newsletter-form').on('submit', app.handleNewsletterSubmit);
+
     // Handle click event on header burger button
     $('.main-nav__button').on('click', app.handleNavOpening);
     $('.menu__closing').on('click', app.handleNavClosing);
@@ -15,6 +18,21 @@ var app = {
     $('.navbar__item__link').each(function () {
       $(this).on('click', app.handleNavClicks);
     });
+  },
+
+  handleNewsletterSubmit: function (event) {
+    event.preventDefault();
+    var email = $(event.currentTarget).find('#newsletter-email').val();
+
+    fetch('http://localhost/wp/wp-json/myprofile/v1/newsletter', {
+      method: 'POST',
+      body: JSON.stringify({email: email}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+        .then(function (res) { console.log(res) })
+        .catch(function (res) { console.log(res) })
   },
 
   handleNavOpening: function () {

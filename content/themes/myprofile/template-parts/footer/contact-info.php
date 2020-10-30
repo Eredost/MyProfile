@@ -30,4 +30,16 @@
         </div>
     </div>
 
+    <div class="contact-info__section">
+        <div class="contact-info__section__wrapper">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+        </div>
+        <form method="post" class="contact-info__section__wrapper" id="newsletter-form">
+            <h4 class="contact-info__title">
+                <label for="newsletter-email">Newsletter</label>
+            </h4>
+            <input class="contact-form__section__input" type="email" name="newsletter-email" id="newsletter-email" placeholder="Votre adresse email" required>
+        </form>
+    </div>
+
 </div>

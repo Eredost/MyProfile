@@ -30,10 +30,21 @@
     &__wrapper:first-child {
       margin-right: 1em;
     }
+
+    & input {
+      font-size: 0.8em;
+      width: 300px;
+    }
   }
 
   @media (min-width: $breakpoint-extralarge) {
     display: inline-block;
     flex: 1;
+
+    &__section {
+      & input {
+        display: block;
+      }
+    }
   }
 }
